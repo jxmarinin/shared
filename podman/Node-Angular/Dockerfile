@@ -12,4 +12,8 @@ RUN npm install -g @angular/cli@${ANGULAR_VERSION}
 WORKDIR /app
 
 # Set the entrypoint to a shell
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
+
+#RUN ng serve --host 0.0.0.0   #!!!!
+
+ENTRYPOINT ["sh"]
